@@ -1,4 +1,11 @@
-<p id="index"></p>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1
+</style>
+</head>
+  <center><h1 id="clock"></h1></center>
 
 <script>
 var countDownDate = new Date("May 26, 2023 15:15:00").getTime();
@@ -14,12 +21,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("index").innerHTML = days + "d " + hours + "h "
+  document.getElementById("clock").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "FREE";
+    document.getElementById("clock").innerHTML = "FREE";
   }
 }, 1000);
 </script>
+</html>
