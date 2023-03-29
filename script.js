@@ -24,4 +24,7 @@ function retrieveDate() {
     const month = getDate().toLocaleString('default', { month: 'long' });
     document.getElementById("date").innerHTML = getDate().toString() + month + getFullYear().toString();
     console.log(test);
+
+if (getDate() == Date("2023-03-29")) {
+  document.getElementByID("lunchtoday").innerHTML = "Lunch Today: Swedish Meatballs, Biscuit or Buttered Noodles, Green Beans, Dessert";
 };
