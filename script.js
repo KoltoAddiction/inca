@@ -20,12 +20,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var x = setInterval(function() {
-  
-  var count = countDownDate - now;
-  document.getElementByID("countdown").innerHTML = "or " + count;
-}, 1);
-
 function retrieveDate() {
     const month = getDate().toLocaleString('default', { month: 'long' });
     document.getElementById("date").innerHTML = getDate().toString() + month + getFullYear().toString();
