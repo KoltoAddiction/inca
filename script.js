@@ -10,12 +10,6 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  var date = getDate();
-  
-  if (date == 29)) {
-  document.getElementByID("lunchtoday").innerHTML = "Lunch Today: Swedish Meatballs, Biscuit or Buttered Noodles, Green Beans, Dessert";
-  }
 
   document.getElementById("clock").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
@@ -25,6 +19,12 @@ var x = setInterval(function() {
     document.getElementById("clock").innerHTML = "FREE";
   }
 }, 1000);
+
+var x = setInterval(function() {
+  
+  var count = countDownDate - now;
+  document.getElementByID("countdown").innerHTML = "or " + count;
+}, 1);
 
 function retrieveDate() {
     const month = getDate().toLocaleString('default', { month: 'long' });
