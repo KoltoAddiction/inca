@@ -11,7 +11,9 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-  if (getDate() == 29)) {
+  var date = getDate();
+  
+  if (date == 29)) {
   document.getElementByID("lunchtoday").innerHTML = "Lunch Today: Swedish Meatballs, Biscuit or Buttered Noodles, Green Beans, Dessert";
   }
 
