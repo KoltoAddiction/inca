@@ -19,5 +19,3 @@ var x = setInterval(function() {
     document.getElementById("clock").innerHTML = "FREE";
   }
 }, 1000);
-
-};
