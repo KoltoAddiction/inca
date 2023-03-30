@@ -19,11 +19,17 @@ var x = setInterval(function() {
     document.getElementById("clock").innerHTML = "FREE";
   }
 }, 1000);
+  
+var curday = function(sp){
+  today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1;
+  var yyyy = today.getFullYear();
 
-function retrieveDate() {
-    const month = getDate().toLocaleString('default', { month: 'long' });
-    document.getElementById("date").innerHTML = getDate().toString() + month + getFullYear().toString();
-    console.log(test);
-
+  if(dd<10) dd='0'+dd;
+  if(mm<10) mm='0'+mm;
+  return (yyyy+sp+mm+sp+dd);
+  };
+document.getElementByID("date").innerHTML = curday('.');
 
 };
