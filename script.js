@@ -17,15 +17,15 @@ var x = setInterval(function() {
 
   document.getElementById("clock").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+  
+  if(days == 57) {
+    document.getElementByID("lunchtoday").innerHTML = "Italian Pasta-n-Sauce, Garlic Bread, Roasted Veggies";
+  } else if(days == 56) {
+    document.getElementByID("lunchtoday").innerHTML = "Hamburger, Fries or Tots, Fruit";
+  }
 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("clock").innerHTML = "FREE";
   }
 }, 1000);
-
- if(days == 57) {
-    document.getElementByID("lunchtoday").innerHTML = "Italian Pasta-n-Sauce, Garlic Bread, Roasted Veggies";
-  } else if(days == 56) {
-    document.getElementByID("lunchtoday").innerHTML = "Hamburger, Fries or Tots, Fruit";
-  }
