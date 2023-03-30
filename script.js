@@ -1,4 +1,8 @@
 var countDownDate = new Date("May 26, 2023 15:15:00").getTime();
+var days = 0;
+var hours = 0;
+var minutes = 0;
+var seconds = 0;
 
 var x = setInterval(function() {
 
@@ -6,10 +10,10 @@ var x = setInterval(function() {
 
   var distance = countDownDate - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("clock").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
@@ -19,3 +23,9 @@ var x = setInterval(function() {
     document.getElementById("clock").innerHTML = "FREE";
   }
 }, 1000);
+
+ if(days == 57) {
+    document.getElementByID("lunchtoday").innerHTML = "Italian Pasta-n-Sauce, Garlic Bread, Roasted Veggies";
+  } else if(days == 56) {
+    document.getElementByID("lunchtoday").innerHTML = "Hamburger, Fries or Tots, Fruit";
+  }
