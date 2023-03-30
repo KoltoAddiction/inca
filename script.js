@@ -19,9 +19,9 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
   
   if(days == 57) {
-    document.getElementByID("lunchtoday").innerHTML = "Italian Pasta-n-Sauce, Garlic Bread, Roasted Veggies";
+    document.getElementById("lunchtoday").innerHTML = "Italian Pasta-n-Sauce, Garlic Bread, Roasted Veggies";
   } else if(days == 56) {
-    document.getElementByID("lunchtoday").innerHTML = "Hamburger, Fries or Tots, Fruit";
+    document.getElementById("lunchtoday").innerHTML = "Hamburger, Fries or Tots, Fruit";
   }
 
   if (distance < 0) {
