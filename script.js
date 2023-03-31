@@ -28,6 +28,12 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("clock").innerHTML = "FREE";
   }
+  
+  var dd = now.getDate();
+  var mm = now.getMonth() + 1;
+  var yyyy = now.getFullYear();
+  
+  document.getElementById("currentdate").innerHTML = yyyy + "." + mm + "." + dd;
 }, 1000);
 
 var x = setInterval(function() {
@@ -37,5 +43,10 @@ var x = setInterval(function() {
   var distance = countDownDate-now;
   
   document.getElementById("ms").innerHTML="or " + distance + "ms";
+  
+    if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("clock").innerHTML = "";
+  }
 
 }, 1);
