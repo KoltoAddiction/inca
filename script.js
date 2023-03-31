@@ -36,6 +36,6 @@ var x = setInterval(function() {
   
   var distance = countDownDate-now;
   
-  document.getElementById("ms").innerHTML=distance;
+  document.getElementById("ms").innerHTML="or " + distance + "ms";
 
 }, 1);
