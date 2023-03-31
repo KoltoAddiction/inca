@@ -33,7 +33,7 @@ var x = setInterval(function() {
   var mm = now.getMonth() + 1;
   var yyyy = now.getFullYear();
   
-  document.getElementById("currentdate").innerHTML = yyyy + "." + mm + "." + dd;
+  document.getElementById("currentdate").innerHTML = yyyy.toString() + "." + mm.toString() + "." + dd.toString();
 }, 1000);
 
 var x = setInterval(function() {
