@@ -29,11 +29,13 @@ var x = setInterval(function() {
     document.getElementById("clock").innerHTML = "FREE";
   }
   
-  var dd = now.getDate();
-  var mm = now.getMonth() + 1;
-  var yyyy = now.getFullYear();
+  var curDate = new Date();
   
-  document.getElementById("currentdate").innerHTML = yyyy.toString() + "." + mm.toString() + "." + dd.toString();
+  var dd = curDate.getDate();
+  var mm = curDate.getMonth() + 1;
+  var yyyy = curDate.getFullYear();
+  
+  document.getElementById("currentdate").innerHTML = yyyy + "." + mm + "." + dd;
 }, 1000);
 
 var x = setInterval(function() {
@@ -46,7 +48,7 @@ var x = setInterval(function() {
   
     if (distance < 0) {
     clearInterval(x);
-    document.getElementById("clock").innerHTML = "";
+    document.getElementById("ms").innerHTML = "";
   }
 
 }, 1);
