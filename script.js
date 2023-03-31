@@ -35,6 +35,9 @@ var x = setInterval(function() {
   var mm = curDate.getMonth() + 1;
   var yyyy = curDate.getFullYear();
   
+  if (mm < 10) {mm = "0" + mm;}
+  if (dd < 10) {dd = "0" + dd:}
+  
   document.getElementById("currentdate").innerHTML = yyyy + "." + mm + "." + dd;
 }, 1000);
 
