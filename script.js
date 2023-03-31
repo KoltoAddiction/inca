@@ -29,3 +29,13 @@ var x = setInterval(function() {
     document.getElementById("clock").innerHTML = "FREE";
   }
 }, 1000);
+
+var x = setInterval(function() {
+  
+  var now = new Date().getTime();
+  
+  var distance = countDownDate-now;
+  
+  document.getElementById("ms").innerHTML=distance;
+
+}, 1);
