@@ -1,4 +1,4 @@
-var currentVersion = "0.0.4a" //Version Number!!
+var currentVersion = "0.0.4b" //Version Number!!
 
 var countDownDate = new Date("May 26, 2023 15:15:00").getTime();
 var days = 0;
@@ -49,7 +49,7 @@ var x = setInterval(function() {
   if (dd < 10) {dd = "0" + dd;}
   
   document.getElementById("currentdate").innerHTML = yyyy + "." + mm + "." + dd;
-  document.getElementById("websitename").innerHTML = "Kolto's State of the INCA " + currentVersion;
+  document.getElementById("websitename").innerHTML = "Kolto's State of the INCA v" + currentVersion;
 }, 1000);
 
 var x = setInterval(function() {

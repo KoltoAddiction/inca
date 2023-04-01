@@ -1,4 +1,4 @@
-# INCAsite 0.0.4
+# Kolto's State of the Inca v0.0.4b
 My website with school stuff or something idk.
 
 Contains:
