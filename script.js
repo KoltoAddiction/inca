@@ -18,10 +18,18 @@ var x = setInterval(function() {
   document.getElementById("clock").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
-  if(days == "57") {
-    document.getElementById("lunchtoday").innerHTML = "Italian Pasta-n-Sauce, Garlic Bread, Roasted Veggies";
-  } else if (days == "56") {
-    document.getElementById("lunchtoday").innerHTML = "Hamburger, Fries or Tots, Fruit";
+  if(days == "53") {
+    document.getElementById("lunchtoday").innerHTML = "Pizza, Fruit, Veggies";
+  } else if (days == "52") {
+    document.getElementById("lunchtoday").innerHTML = "Spud Bowl (Popcorn Chicken, Corn, Mashed Potatoes), Fruit";
+  } else if (days == "51") {
+    document.getElementById("lunchtoday").innerHTML = "Italian Dunkers, Caesar Salad, Oranges";
+  } else if (days == "50") {
+    document.getElementById("lunchtoday").innerHTML = "Cinnamon Rolls, Egg Bake, Grapes";
+  } else if (days == "49") {
+    document.getElementById("lunchtoday").innerHTML = "No School Lunch Today (Or I Fell Off)";
+  } else {
+    document.getElementById("lunchtoday").innerHTML = "No School Lunch Today (Or I Fell Off)";
   }
 
   if (distance < 0) {
