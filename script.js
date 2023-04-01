@@ -49,7 +49,7 @@ var x = setInterval(function() {
   if (dd < 10) {dd = "0" + dd;}
   
   document.getElementById("currentdate").innerHTML = yyyy + "." + mm + "." + dd;
-  document.getElementById("websitename").innerHTML = "Kolto's State of the INCA" + currentVersion;
+  document.getElementById("websitename").innerHTML = "Kolto's State of the INCA " + currentVersion;
 }, 1000);
 
 var x = setInterval(function() {
