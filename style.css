@@ -1,29 +1,3 @@
-h1 {
-   text-align: center;
-   color:lightcyan;
-   font-size: 140px; 
-   text-shadow: 7px 7px #5f9ea0;
-   font-family: 'Quicksand', sans-serif;
-}
-h2 {
-   text-align: center; 
-   font-size: 42px; 
-   font-family: 'Quicksand', sans-serif; 
-   color:#E6E6FA; 
-   text-shadow: 3px 3px #94a2ad;
-}
-h3 {
-   text-align: center;
-   color:lightcyan;
-   font-size: 24px; 
-   text-shadow: 2px 2px #5f9ea0;
-   font-family: 'Quicksand', sans-serif;
-}
-p {
-   font-size: 16px; 
-   font-family: 'Roboto Mono', monospace; 
-}
-
 #footer {
    position:fixed;
    bottom:0;
@@ -49,35 +23,4 @@ p {
    padding-left:0;
    padding-right:0;
    display: flex;
-}
-
-#currentdate {
-   color:lightcyan;
-   text-align: right; 
-   margin-right: 20px; 
-   margin-left: auto;
-}
-
-#websitename {
-   color:lightcyan;
-   text-align: left; 
-   margin-left: 20px;
-}
-
-#ms, #lunchtoday {
-   position:relative; 
-   top:-100px;
-}
-
-#copyright {
-   text-align: left; 
-   color:darkslategrey; 
-   margin-left: 20px;
-}
-
-#socials {
-   text-align: right; 
-   color:darkslategrey; 
-   margin-right: 20px; 
-   margin-left: auto;
 }
