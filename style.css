@@ -40,6 +40,7 @@ a {
    padding-right:0;
    background:lightcyan;
    display: flex;
+   justify-content: space-between;
 }
 
 #header {
@@ -53,18 +54,21 @@ a {
    padding-left:0;
    padding-right:0;
    display: flex;
+   justify-content: space-between;
 }
 
 #currentdate {
    color:lightcyan;
-   text-align: right; 
    margin-right: 20px; 
-   margin-left: auto;
+}
+
+#greeting {
+   color:lightcyan;
+   text-align: center;
 }
 
 #websitename {
    color:lightcyan;
-   text-align: left; 
    margin-left: 20px;
 }
 
@@ -74,7 +78,6 @@ a {
 }
 
 #copyright {
-   text-align: left; 
    color:darkslategrey; 
    margin-left: 20px;
    position: relative;
@@ -82,8 +85,6 @@ a {
 }
 
 #socials {
-   text-align: right; 
    color:darkslategrey; 
    margin-right: 20px; 
-   margin-left: auto;
 }
