@@ -23,6 +23,10 @@ p {
    font-size: 16px; 
    font-family: 'Roboto Mono', monospace; 
 }
+a {
+   font-size: 16px; 
+   font-family: 'Roboto Mono', monospace; 
+}
 
 #footer {
    position:fixed;
@@ -73,6 +77,8 @@ p {
    text-align: left; 
    color:darkslategrey; 
    margin-left: 20px;
+   position: relative;
+   top: 16px;
 }
 
 #socials {
