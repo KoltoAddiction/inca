@@ -1,10 +1,11 @@
-# INCAsite 0.0.2
+# INCAsite 0.0.4
 My website with school stuff or something idk.
 
-Contains a countdown to the last day of school.
+Contains:
+Countdown to last day of school (now in miliseconds)
+Hot lunch every day
 
  To-Do:
- Current Day's Hot Lunch
  School announcements/important dates
  Patriot of the Week?
  Accounts???
