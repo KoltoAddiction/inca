@@ -1,4 +1,4 @@
-# Kolto's State of the INCA v0.0.6a
+# Kolto's State of the INCA v0.0.6b
 
 My website with school stuff or something idk.
 
