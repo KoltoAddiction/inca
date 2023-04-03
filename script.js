@@ -1,4 +1,4 @@
-var currentVersion = "0.0.6" //Version Number!!
+var currentVersion = "0.0.6a" //Version Number!!
 
 var countDownDate = new Date("May 26, 2023 12:00:00").getTime();
 var days = 0;
