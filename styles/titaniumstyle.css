@@ -1,0 +1,118 @@
+#body {
+   background-color:dimgrey;
+}
+
+h1 {
+   text-align: center;
+   color:aliceblue;
+   font-size: 140px; 
+   text-shadow: 7px 7px #b3b8bc;
+   font-family: 'Quicksand', sans-serif;
+}
+h2 {
+   text-align: center; 
+   font-size: 42px; 
+   font-family: 'Quicksand', sans-serif; 
+   color:aliceblue; 
+   text-shadow: 3px 3px #b3b8bc;
+}
+h3 {
+   text-align: center;
+   color:aliceblue;
+   font-size: 24px; 
+   text-shadow: 2px 2px #b3b8bc;
+   font-family: 'Quicksand', sans-serif;
+}
+p {
+   font-size: 16px; 
+   font-family: 'Roboto Mono', monospace; 
+}
+a {
+   font-size: 16px; 
+   font-family: 'Roboto Mono', monospace; 
+}
+img {
+   margin: 5px;
+}
+
+#footer {
+   position:fixed;
+   bottom:0;
+   left:0;
+   width:100%;
+   height:50px;
+   margin-left:0;
+   margin-right:0;
+   padding-left:0;
+   padding-right:0;
+   background:aliceblue;
+   display: flex;
+}
+
+#header {
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:50px;
+   margin-left:0;
+   margin-right:0;
+   padding-left:0;
+   padding-right:0;
+   display: flex;
+   justify-content: space-between;
+}
+
+#currentdate {
+   color:aliceblue;
+   margin-left: auto;
+}
+
+#greeting {
+   color:aliceblue;
+   text-align: center;
+}
+
+#websitename {
+   color:aliceblue;
+   margin-left: 20px;
+}
+
+#ms, #lunchtoday {
+   position:relative; 
+   top:-100px;
+}
+
+#copyright {
+   color:dimgrey; 
+   margin-left: 20px;
+   position: relative;
+   top: 16px;
+}
+
+#socials {
+   color:dimgrey;
+   margin-left: auto;
+}
+
+#ytlogo {
+   position:relative;
+   top:10px;
+}
+#twlogo {
+   position:relative;
+   top:8px;
+}
+#rdlogo {
+   position:relative;
+   top:5px;
+}
+#stlogo {
+   position:relative;
+   top:5px;
+   margin-right:10px;
+}
+#theme {
+   background-color: dimgrey;
+   border: 0;
+}

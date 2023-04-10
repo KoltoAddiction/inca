@@ -1,4 +1,4 @@
-var currentVersion = "0.0.6b" //Version Number!!
+var currentVersion = "0.1.0" //Version Number!!
 
 var countDownDate = new Date("May 26, 2023 12:00:00").getTime();
 var lunchDate = new Date ("May 26, 2023 15:15:00").getTime()
@@ -6,6 +6,7 @@ var days = 0;
 var hours = 0;
 var minutes = 0;
 var seconds = 0;
+var currentTheme = 0;
 
 var x = setInterval(function() {
 
@@ -84,3 +85,36 @@ var x = setInterval(function() {
   }
 
 }, 1);
+
+function cycleTheme(){
+  if (currentTheme == 0) {
+    document.getElementById("pagestyle").setAttribute("href", "./styles/tangostyle.css");
+    document.getElementById("theme").setAttribute("title", "Tango Theme");
+    document.getElementById("theme").innerHTML = "<img src='./src/tango.png' alt='changetheme'>";
+    currentTheme = 1;
+  } else if (currentTheme == 1) {
+    document.getElementById("pagestyle").setAttribute("href", "./styles/fernstyle.css");
+    document.getElementById("theme").setAttribute("title", "Fern Theme");
+    document.getElementById("theme").innerHTML = "<img src='./src/fern.png' alt='changetheme'>";
+
+    currentTheme = 2;
+  } else if (currentTheme == 2) {
+    document.getElementById("pagestyle").setAttribute("href", "./styles/rosestyle.css");
+    document.getElementById("theme").setAttribute("title", "Rose Theme");
+    document.getElementById("theme").innerHTML = "<img src='./src/rose.png' alt='changetheme'>";
+
+    currentTheme = 3;
+  } else if (currentTheme == 3) {
+    document.getElementById("pagestyle").setAttribute("href", "./styles/titaniumstyle.css");
+    document.getElementById("theme").setAttribute("title", "Titanium Theme");
+    document.getElementById("theme").innerHTML = "<img src='./src/titanium.png' alt='changetheme'>";
+
+    currentTheme = 4;
+  } else if (currentTheme == 4) {
+    document.getElementById("pagestyle").setAttribute("href", "./styles/waveformstyle.css");
+    document.getElementById("theme").setAttribute("title", "Waveform Theme");
+    document.getElementById("theme").innerHTML = "<img src='./src/waveform.png' alt='changetheme'>";
+
+    currentTheme = 0;
+  }
+};

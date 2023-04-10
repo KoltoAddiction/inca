@@ -1,0 +1,118 @@
+#body {
+   background-color:darkslategrey;
+}
+
+h1 {
+   text-align: center;
+   color:lightcyan;
+   font-size: 140px; 
+   text-shadow: 7px 7px #5f9ea0;
+   font-family: 'Quicksand', sans-serif;
+}
+h2 {
+   text-align: center; 
+   font-size: 42px; 
+   font-family: 'Quicksand', sans-serif; 
+   color:#E6E6FA; 
+   text-shadow: 3px 3px #94a2ad;
+}
+h3 {
+   text-align: center;
+   color:lightcyan;
+   font-size: 24px; 
+   text-shadow: 2px 2px #5f9ea0;
+   font-family: 'Quicksand', sans-serif;
+}
+p {
+   font-size: 16px; 
+   font-family: 'Roboto Mono', monospace; 
+}
+a {
+   font-size: 16px; 
+   font-family: 'Roboto Mono', monospace; 
+}
+img {
+   margin: 5px;
+}
+
+#footer {
+   position:fixed;
+   bottom:0;
+   left:0;
+   width:100%;
+   height:50px;
+   margin-left:0;
+   margin-right:0;
+   padding-left:0;
+   padding-right:0;
+   background:lightcyan;
+   display: flex;
+}
+
+#header {
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:50px;
+   margin-left:0;
+   margin-right:0;
+   padding-left:0;
+   padding-right:0;
+   display: flex;
+   justify-content: space-between;
+}
+
+#currentdate {
+   color:lightcyan;
+   margin-left: auto;
+}
+
+#greeting {
+   color:lightcyan;
+   text-align: center;
+}
+
+#websitename {
+   color:lightcyan;
+   margin-left: 20px;
+}
+
+#ms, #lunchtoday {
+   position:relative; 
+   top:-100px;
+}
+
+#copyright {
+   color:darkslategrey; 
+   margin-left: 20px;
+   position: relative;
+   top: 16px;
+}
+
+#socials {
+   color:darkslategrey;
+   margin-left: auto;
+}
+
+#ytlogo {
+   position:relative;
+   top:10px;
+}
+#twlogo {
+   position:relative;
+   top:8px;
+}
+#rdlogo {
+   position:relative;
+   top:5px;
+}
+#stlogo {
+   position:relative;
+   top:5px;
+   margin-right:10px;
+}
+#theme {
+   background-color: darkslategrey;
+   border: 0;
+}
