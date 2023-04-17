@@ -1,4 +1,4 @@
-var currentVersion = "0.1.2" //Version Number!!
+var currentVersion = "0.1.2a" //Version Number!!
 
 var countDownDate = new Date("May 26, 2023 12:00:00").getTime();
 var lunchDate = new Date ("May 26, 2023 15:15:00").getTime()
@@ -9,10 +9,26 @@ var seconds = 0;
 var currentTheme = 0;
 
 var x = setInterval(function() {
-
+  
   var now = new Date().getTime();
+  
+  var distance = countDownDate-now;
+  
+  days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  var distance = countDownDate - now;
+  document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  document.getElementById("ms").innerHTML="or " + distance + "ms";
+  
+    if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("ms").innerHTML = "";
+  }
+  
   var lunchdistance = lunchDate - now;
   
   lunchDays = Math.floor(lunchdistance / (1000 * 60 * 60 * 24));
@@ -58,28 +74,6 @@ var x = setInterval(function() {
     document.getElementById("greeting").innerHTML = "Good Morning, Traveler";
   } else {
     document.getElementById("greeting").innerHTML = "Go To Sleep, Traveler. Your Health Falters At This Hour.";
-  }
-}, 1000);
-
-var x = setInterval(function() {
-  
-  var now = new Date().getTime();
-  
-  var distance = countDownDate-now;
-  
-  days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("clock").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  document.getElementById("ms").innerHTML="or " + distance + "ms";
-  
-    if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("ms").innerHTML = "";
   }
 
 }, 1);
