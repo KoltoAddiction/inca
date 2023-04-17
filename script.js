@@ -1,4 +1,4 @@
-var currentVersion = "0.1.1" //Version Number!!
+var currentVersion = "0.1.2" //Version Number!!
 
 var countDownDate = new Date("May 26, 2023 12:00:00").getTime();
 var lunchDate = new Date ("May 26, 2023 15:15:00").getTime()
@@ -14,18 +14,8 @@ var x = setInterval(function() {
 
   var distance = countDownDate - now;
   var lunchdistance = lunchDate - now;
-
-  days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   lunchDays = Math.floor(lunchdistance / (1000 * 60 * 60 * 24));
-
-  document.getElementById("clock").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  
   
   if(lunchDays == "39") {
     document.getElementById("lunchtoday").innerHTML = "Pizza, Veggies, Fruit";
@@ -76,6 +66,14 @@ var x = setInterval(function() {
   var now = new Date().getTime();
   
   var distance = countDownDate-now;
+  
+  days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
   
   document.getElementById("ms").innerHTML="or " + distance + "ms";
   
