@@ -7,6 +7,8 @@ Contains:
  - Hot lunch every day
  - Greeting!
  - Themes!!!
+ - henry
+ - kaeleb
 
 To-Do:
  - School announcements/important dates
