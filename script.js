@@ -33,15 +33,15 @@ var x = setInterval(function() {
   
   lunchDays = Math.floor(lunchdistance / (1000 * 60 * 60 * 24));
   
-  if(lunchDays == "39") {
+  if(lunchDays == "32") {
     document.getElementById("lunchtoday").innerHTML = "Pizza, Veggies, Fruit";
-  } else if (lunchDays == "38") {
+  } else if (lunchDays == "31") {
     document.getElementById("lunchtoday").innerHTML = "Mini Corn Dogs, Waffle Fries, Fruit, Baked Beans";
-  } else if (lunchDays == "37") {
+  } else if (lunchDays == "30") {
     document.getElementById("lunchtoday").innerHTML = "Spaghetti, Garlic Bread, Broccoli";
-  } else if (lunchDays == "36") {
+  } else if (lunchDays == "29") {
     document.getElementById("lunchtoday").innerHTML = "Homemade Chicken Noodle Soup, Grilled Cheese";
-  } else if (lunchDays == "35") {
+  } else if (lunchDays == "28") {
     document.getElementById("lunchtoday").innerHTML = "Chick-fil-A Sandwich, Fries, Fruit";
   } else {
     document.getElementById("lunchtoday").innerHTML = "No School Lunch Today (Or I Fell Off)";
