@@ -36,11 +36,11 @@ var x = setInterval(function() {
   if(lunchDays == "39") {
     document.getElementById("lunchtoday").innerHTML = "Pizza, Veggies, Fruit";
   } else if (lunchDays == "38") {
-    document.getElementById("lunchtoday").innerHTML = "Pigs-n-a-Blanket, Pancake, Sausage, Hashbrowns, Oranges, Pastry";
+    document.getElementById("lunchtoday").innerHTML = "Mini Corn Dogs, Waffle Fries, Fruit, Baked Beans";
   } else if (lunchDays == "37") {
-    document.getElementById("lunchtoday").innerHTML = "Chicken Fettuccini Alfredo, Italian Bread, Salad, Fruit";
+    document.getElementById("lunchtoday").innerHTML = "Spaghetti, Garlic Bread, Broccoli";
   } else if (lunchDays == "36") {
-    document.getElementById("lunchtoday").innerHTML = "Sloppy Joes, Corn, Fruit, Chips";
+    document.getElementById("lunchtoday").innerHTML = "Homemade Chicken Noodle Soup, Grilled Cheese";
   } else if (lunchDays == "35") {
     document.getElementById("lunchtoday").innerHTML = "Chick-fil-A Sandwich, Fries, Fruit";
   } else {
