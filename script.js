@@ -36,13 +36,13 @@ var x = setInterval(function() {
   if(lunchDays == "32") {
     document.getElementById("lunchtoday").innerHTML = "Pizza, Veggies, Fruit";
   } else if (lunchDays == "31") {
-    document.getElementById("lunchtoday").innerHTML = "Mini Corn Dogs, Waffle Fries, Fruit, Baked Beans";
+    document.getElementById("lunchtoday").innerHTML = "Hamburger or Cheeseburger, Chip-n-dip, Fruit";
   } else if (lunchDays == "30") {
-    document.getElementById("lunchtoday").innerHTML = "Spaghetti, Garlic Bread, Broccoli";
+    document.getElementById("lunchtoday").innerHTML = "French Toast Sticks, Yogurt, Fruit, Hashbrown";
   } else if (lunchDays == "29") {
-    document.getElementById("lunchtoday").innerHTML = "Homemade Chicken Noodle Soup, Grilled Cheese";
+    document.getElementById("lunchtoday").innerHTML = "Orange Chicken Stir Fry, Veggies, Rice";
   } else if (lunchDays == "28") {
-    document.getElementById("lunchtoday").innerHTML = "Chick-fil-A Sandwich, Fries, Fruit";
+    document.getElementById("lunchtoday").innerHTML = "Mac & Cheese, Corn, Hot dogs, Fruit";
   } else {
     document.getElementById("lunchtoday").innerHTML = "No School Lunch Today (Or I Fell Off)";
   }
