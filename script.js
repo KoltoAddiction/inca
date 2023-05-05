@@ -1,4 +1,4 @@
-var currentVersion = "0.1.2a" //Version Number!!
+var currentVersion = "0.1.3" //Version Number!!
 
 var countDownDate = new Date("May 26, 2023 12:00:00").getTime();
 var lunchDate = new Date ("May 26, 2023 15:15:00").getTime()
@@ -110,3 +110,13 @@ function cycleTheme(){
     currentTheme = 0;
   }
 };
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("vcopy").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "https://labs.bible.org/api/?passage=random", true);
+xhttp.send();

@@ -1,4 +1,4 @@
-# Kolto's State of the INCA v0.1.2a
+# Kolto's State of the INCA v0.1.3
 
 My website with school stuff or something idk.
 
@@ -9,6 +9,7 @@ Contains:
  - Themes!!!
  - henry
  - kaeleb
+ - Random verse
 
 To-Do:
  - School announcements/important dates
