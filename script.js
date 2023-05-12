@@ -33,16 +33,16 @@ var x = setInterval(function() {
   
   lunchDays = Math.floor(lunchdistance / (1000 * 60 * 60 * 24));
   
-  if(lunchDays == "18") {
+  if(lunchDays == "11") {
     document.getElementById("lunchtoday").innerHTML = "Pizza, Veggies, Fruit";
-  } else if (lunchDays == "17") {
-    document.getElementById("lunchtoday").innerHTML = "Sub Sandwich, Chip-n-Dip, Fruit, Rice Krispie Bar";
-  } else if (lunchDays == "16") {
-    document.getElementById("lunchtoday").innerHTML = "Italian Dunkers, Mandarin Oranges, Brownie";
-  } else if (lunchDays == "15") {
-    document.getElementById("lunchtoday").innerHTML = "Enchilada Bake, Spanish Rice, Fruit, Melon";
-  } else if (lunchDays == "14") {
-    document.getElementById("lunchtoday").innerHTML = "Pulled Pork Sandwich, Cheesy Potatoes, Baked Beans, Fruit";
+  } else if (lunchDays == "10") {
+    document.getElementById("lunchtoday").innerHTML = "Breakfast Bites, Hashbrown, Apples";
+  } else if (lunchDays == "9") {
+    document.getElementById("lunchtoday").innerHTML = "Salisbury Steak, Mashed Potatoes, Green Beans";
+  } else if (lunchDays == "8") {
+    document.getElementById("lunchtoday").innerHTML = "Poppyseed Chicken, Rice, Fruit, Salad";
+  } else if (lunchDays == "7") {
+    document.getElementById("lunchtoday").innerHTML = "Chef’s Choice";
   } else {
     document.getElementById("lunchtoday").innerHTML = "No School Lunch Today (Or I Fell Off)";
   }
