@@ -1,7 +1,7 @@
-var currentVersion = "0.1.3" //Version Number!!
+var currentVersion = "0.1.4" //Version Number!!
 
 var countDownDate = new Date("May 26, 2023 12:00:00").getTime();
-var lunchDate = new Date ("May 26, 2023 15:15:00").getTime()
+var lunchDate = new Date("May 26, 2023 15:15:00").getTime();
 var days = 0;
 var hours = 0;
 var minutes = 0;
@@ -19,15 +19,18 @@ var x = setInterval(function() {
   minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("clock").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  document.getElementById("ms").innerHTML="or " + distance + "ms";
-  
-    if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("ms").innerHTML = "";
-  }
+    if (distance >= 0) {
+      document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      
+      document.getElementById("ms").innerHTML="or " + distance + "ms";
+    }
+    else if (distance < 0) {
+    var thetaDate = new Date("August 23, 2023 08:15:00").getTime();
+    var thetaDistance = thetaDate - now;
+    document.getElementById("clock").innerHTML = "LIBERATION";
+    document.getElementById("ms").innerHTML = "for " + thetaDistance + "ms";
+    }
   
   var lunchdistance = lunchDate - now;
   
@@ -43,13 +46,10 @@ var x = setInterval(function() {
     document.getElementById("lunchtoday").innerHTML = "Cinnamon Rolls, Breakfast Item, Fruit";
   } else if (lunchDays == "0") {
     document.getElementById("lunchtoday").innerHTML = "Current Objective: Survive";
+  } else if (lunchdistance < 0) {
+    document.getElementById("lunchtoday").innerHTML = "Objective Complete. See You Next Time! :)";
   } else {
     document.getElementById("lunchtoday").innerHTML = "No School Lunch Today (Or I Fell Off)";
-  }
-
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("clock").innerHTML = "FREE";
   }
   
   var curDate = new Date();
