@@ -1,7 +1,7 @@
 var currentVersion = "0.1.4" //Version Number!!
 
-var countDownDate = new Date("May 26, 2023 12:00:00").getTime();
-var lunchDate = new Date("May 26, 2023 12:00:00").getTime();
+var countDownDate = new Date("May 24, 2024 12:00:00").getTime();
+var lunchDate = new Date("May 24, 2024 12:00:00").getTime();
 var days = 0;
 var hours = 0;
 var minutes = 0;
@@ -26,7 +26,7 @@ var x = setInterval(function() {
       document.getElementById("ms").innerHTML="or " + distance + "ms";
     }
     else if (distance < 0) {
-    var thetaDate = new Date("August 23, 2023 08:15:00").getTime();
+    var thetaDate = new Date("August 23, 2024 08:15:00").getTime();
     var thetaDistance = thetaDate - now;
     document.getElementById("clock").innerHTML = "LIBERATION";
     document.getElementById("ms").innerHTML = "for " + thetaDistance + "ms";
