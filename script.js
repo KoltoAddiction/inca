@@ -1,4 +1,4 @@
-var currentVersion = "0.1.4" //Version Number!!
+var currentVersion = "0.1.5" //Version Number!!
 
 var countDownDate = new Date("May 24, 2024 12:00:00").getTime();
 var lunchDate = new Date("May 24, 2024 12:00:00").getTime();
